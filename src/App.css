@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+.entire_div {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color:cornsilk;
+}
+
+section {
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+#sideNav {
+  position: fixed;
+  list-style-type: none;
+}
+
+.navi {
+  font-size: 35px;
+  margin-bottom: 10vh;
+}
+
+.navi a {
+  text-decoration: none;
+}
+
+
+
+#main {
+  width: calc(100vw-100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  font-family: "IBM Plex Sans KR", sans-serif;
+
+}
+
+@media (max-width: 1000px) {
+  #main {
+    width: calc(100vw-100px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+  }
+  
+}
+
+.point {
+  font-weight: bold;
+  background-color: greenyellow;
+}
+
+.profile_pic_div {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-right: 5vw;
+}
+
+.profile_pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page_imgs {
+  width: calc(100vh-100px);
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgs {
+  width: 180px;
+  margin: 10px;
+}
